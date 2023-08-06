@@ -1,16 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from '../routes/Home';
-import About from '../routes/About';
-import WebDesign from '../routes/WebDesign';
-import SEO from '../routes/SEO';
-import Services from '../routes/Services';
 import Layout from './Layout';
-import Frontend from '../routes/Frontend';
-import PHP from '../routes/PHP';
-import Node from '../routes/Node';
-import AboutWho from '../routes/AboutWho';
-import OurValues from '../routes/OurValues';
-import WebDev from '../routes/WebDev';
+
+import Home from '../pages/Home';
+import Help from '../pages/Help';
+import Articles from '../pages/Articles';
+import Initiatives from '../pages/Initiatives';
+import Blogs from '../pages/Blogs';
+import Quiz from '../pages/Quiz';
+import Relax from '../pages/Relax';
+import Memes from '../pages/Memes';
+import FAQs from '../pages/FAQs';
+import Volunteer from '../pages/Volunteer';
+import ContactUs from '../pages/ContactUs';
+import SignUp from '../pages/SignUp';
 
 const App = () => {
   return (
@@ -18,17 +20,17 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="services" element={<Services />} />
-          <Route path="web-design" element={<WebDesign />} />
-          <Route path="web-dev" element={<WebDev />} />
-          <Route path="frontend" element={<Frontend />} />
-          <Route path="node" element={<Node />} />
-          <Route path="seo" element={<SEO />} />
-          <Route path="php" element={<PHP />} />
-          <Route path="who-we-are" element={<AboutWho />} />
-          <Route path="our-values" element={<OurValues />} />
-          <Route path="*" element={<p>Not found!</p>} />
+          <Route path="help" element={<Help />} />
+          <Route path="articles" element={<Articles />} />
+          <Route path="initiatives" element={<Initiatives />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="quiz" element={<Quiz />} />
+          <Route path="relax" element={<Relax />} />
+          <Route path="memes" element={<Memes />} />
+          <Route path="faq" element={<FAQs />} />
+          <Route path="volunteer" element={<Volunteer />} />
+          <Route path="contact" element={<ContactUs />} />
+          <Route path="sign-up" element={<SignUp />} />
         </Route>
       </Routes>
     </>

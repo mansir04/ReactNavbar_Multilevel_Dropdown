@@ -5,62 +5,62 @@ export const menuItems = [
   },
   {
     title: 'Resources',
-    url: '/services',
     submenu: [
       {
-        title: 'Helplines',
-        url: 'web-design',
+        title: 'Help',
+        url: 'help',
       },
       {
-        title: 'Gov. of India',
-        url: 'web-dev',
-        submenu: [
-          {
-            title: 'Frontend',
-            url: 'frontend',
-          },
-          {
-            title: 'Backend',
-            submenu: [
-              {
-                title: 'NodeJS',
-                url: 'node',
-              },
-              {
-                title: 'PHP',
-                url: 'php',
-              },
-            ],
-          },
-        ],
+        title: 'Articles',
+        url: 'articles',
       },
       {
-        title: 'NGOs',
-        url: 'seo',
+        title: 'Initiatives',
+        url: 'initiatives',
       },
     ],
   },
   {
     title: 'Social',
-    url: '/about',
     submenu: [
       {
-        title: 'Find help groups',
-        url: 'who-we-are',
+        title: 'Blogs',
+        url: 'blogs',
       },
       {
-        title: 'Blogs',
-        url: 'our-values',
+        title: 'Quiz',
+        url: 'quiz',
+      },
+      {
+        title: 'Relax',
+        url: 'relax',
+      },
+      {
+        title: 'Memes',
+        url: 'memes',
       },
     ],
   },
   {
     title: 'Contact',
-    url: 'contact',
+    submenu: [
+      {
+        title: 'FAQs',
+        url: 'faq',
+      },
+      {
+        title: 'Volunteer',
+        url: 'volunteer',
+      },
+      {
+        title: 'Contact Us',
+        url: 'contact',
+      },
+    ],
   },
   {
     title: 'Sign Up',
-    url: 'sign-up', // Replace with the actual URL for your sign-up page
-    isCTA: true,   // Add a flag to identify this as a CTA button
+    url: 'sign-up', 
+    isCTA: true, //call to action button
   },
 ];
